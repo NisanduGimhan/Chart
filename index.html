@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather dashbord</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Weather Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+     
+        <div class="row "row g-3 mt-3" ">
+            
+            <!-- -----------temp------------ -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/istockphoto-1493993287-1024x1024.jpg" class="card-img-top" alt="Weather Img">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Temperature</h5>
+                        <p id="current-temp"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------humidity-------- -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/humidity.jpg" class="card-img-top" alt="Weather Img">
+                    <div class="card-body">
+                        <h5 class="card-title">Humidity</h5>
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+            </div>
+
+               <!-- --------Recomondation-------- -->
+               <div class="col-md-3">
+                <div class="card">
+                    <img src="img/rain.jpg" class="card-img-top" alt="Weather Img" width="100" height="220">
+                    <div class="card-body">
+                        <h5 class="card-title">Recommended</h5>
+                        <p id="recomondation"></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ---------forecastChart--------- -->
+            <div class="row">
+                <!-- Weekly Forecast -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Weekly Forecast</h5>
+                            <canvas id="forecastChart" style="width: 400px; height: 100px;"></canvas> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- humidity Chart -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Weekly Humidity</h5>
+                            <canvas id="HumidityChart" style="width: 400px; height: 100px;"></canvas> 
+                        </div>
+                    </div>
+                </div>
+
+          <!-- -----------temp chart------------ -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Weekly Temperature</h5>
+                            <canvas id="TempChart" style="width: 400px; height: 100px;"></canvas> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+      <br>
+      
+       
+      <span class="footer-text">2024 Sri Lanka Escapes. All rights reserved.</span>
+      
+      </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
